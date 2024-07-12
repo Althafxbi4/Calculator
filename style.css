@@ -1,0 +1,113 @@
+@font-face {
+    font-family: digital;
+    src: url(digital-7.ttf);
+}
+
+body{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    background-color:lightgreen;
+    margin:50px;
+}
+h1{
+    text-align: center;    
+    color: rgb(121, 0, 0);
+    font-family: fantasy;
+    margin: 0;
+
+}
+
+.maincontainer{
+display: grid;
+width: 300px;
+background-color:gray;
+border-radius: 10px;
+height: 370px;
+}
+
+.game{
+    align-items: center;
+    height: 70px;
+    border: 2px solid gray;
+    background-color:lightskyblue;
+    border-radius: 10px;
+    color: black;
+    font-family: digital;
+    src: url(digital-7.ttf);
+    text-transform: capitalize;
+    font-size: xx-large;
+    
+}
+.buttons{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 6px;
+height: 300p;
+padding-left:10px;
+padding-right: 10px;
+margin-top: 50px;
+}
+.buttonoperator, #clear{
+height: 50px;
+background-color:gainsboro;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.6rem;
+border: 1.5px;
+cursor: pointer;
+border-radius: 5px;
+padding-bottom: 1.5px;
+box-shadow: 3px 3px black;
+}
+
+.buttonnumber, #equals{
+    height: 50px;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border: 1.5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-bottom: 1.5px;
+    box-shadow: 3px 3px black;   
+}
+
+.buttonoperator:hover{
+    background-color:lightgreen;
+    
+}
+.buttonoperator:active{
+    background-color:goldenrod;
+    transform: translate(-0.2rem);
+}
+#equals {
+    background-color:green;
+}
+
+
+.buttonnumber:hover{
+    background-color:lightgreen;
+}
+#clear{
+background-color: red;
+}
+#clear:hover{
+    background-color: lightgreen;
+}
+#equals:hover{
+    background-color: lightgreen;
+}
+.buttonnumber:active{
+    background-color:goldenrod;
+    transform: translate(-0.2rem);
+}
+p{
+    text-align: center;
+    font-size: small;
+    margin:0;
+    font-family:monospace;
+}
